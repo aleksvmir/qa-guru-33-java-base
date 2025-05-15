@@ -1,39 +1,25 @@
-# Игнорируем файлы
+# Игнорируем все файлы
 *
+
+# Включаем только нужные файлы
 !.gitignore
 !build.gradle
+!settings.gradle
 !**/main.java
 
-# Исключаем директории
+# Исключаем служебные директории
 .idea/
 .gradle/
 build/
 out/
 target/
+gradle/
+gradlew
+gradlew.bat
 
-# Игнорируем временные файлы и логи
+# Временные файлы и системные
 *.log
 *.tmp
 *.swp
-
-# Игнорируем системные файлы
 .DS_Store
 Thumbs.db
-
-# Игнорируем IDE-файлы
-*.iml
-*.ipr
-*.iws
-*.class
-*.jar
-
-# Игнорируем файлы конфигурации
-*.properties
-*.xml
-*.yml
-*.env
-
-# Игнорируем Gradle кэш
-.gradle/
-**/build/
-!gradle-wrapper.jar
